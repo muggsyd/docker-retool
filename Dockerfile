@@ -2,8 +2,7 @@ FROM python:3.10-slim  AS compile-image
 MAINTAINER Arran Davis <arran.davis@gmail.com>
 
 RUN apt-get update && apt-get install git -y \
-  curl \
-  && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
 
